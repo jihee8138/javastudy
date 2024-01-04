@@ -19,7 +19,7 @@ public class MainClass {
     /*
      *  식별자의 이름 규칙
      *  1. Pascal Case : 각 단어의 첫 글자는 대문자, 나머지는 소문자 (클래스)
-     *  2. Camel Case  : Pscal Case와 동일하지만, 첫 글자는 소문자   (메소드, 변수)
+     *  2. Camel Case  : Pescal Case와 동일하지만, 첫 글자는 소문자   (메소드, 변수)
      *  3. Snake Case  : 각 단어의 연결을 밑줄(_)로 하는 방식        (상수)
      */
   
@@ -121,7 +121,7 @@ public class MainClass {
      * String 클래스
      * 1. 문자열을 관리하는 클래스이다.
      * 2. 문자열을 저장하는 타입으로 사용한다.
-     * 3. 마치 기본 자료형처럼 쉬운 사용을 제공한다. 
+     * 3. 참조 자료형이지만 마치 기본 자료형처럼 쉬운 사용을 제공한다. 
      */
     String s = "hello world";
     System.out.println(s);
