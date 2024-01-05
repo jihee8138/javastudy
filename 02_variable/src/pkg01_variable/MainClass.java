@@ -126,11 +126,6 @@ public class MainClass {
     String s = "hello world";
     System.out.println(s);
       
-      
-      
-      
-      
   }
-  
 
 }
