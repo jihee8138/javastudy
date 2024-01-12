@@ -65,8 +65,8 @@ public class Customer {
     // 구매 결과 처리
     // 구매가 실패했을 때 breadChange는 null값을 반환하기 때문에 if문을 사용하여 null값이 오지 못하게 함.
     if(breadChange != null) {
-      count += breadChange.getBread();
-      money += breadChange.getChange();
+      this.count += breadChange.getBread();
+      this.money += breadChange.getChange();
       this.money -= money; // 구매할 때마다 내가 가지고 있는 돈이 줄어든다.
       
     }
