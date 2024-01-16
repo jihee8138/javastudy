@@ -4,9 +4,9 @@ public class MainClass {
   
 public static void method1() {
     
-    int second = 90;
-    int m = second / 60;  // 1   분
-    int s = second % 60;  // 30  초
+    int second = 90;  // 정수형 변수 second 선언, 90으로 초기값 설정
+    int m = second / 60;  // 1   분 (second를 60으로 나눈 몫을 구해 m을 저장)
+    int s = second % 60;  // 30  초 (second를 60으로 나눈 나머지를 구해 s에 저장)
     System.out.println(m);
     System.out.println(s);
     

@@ -15,13 +15,16 @@ public class MainClass {
      *      1항    2항               3항              -> 유일한 삼항 연산자
      */
     
-    int hour = 11;
+    int hour = 11;  // 정수형 변수 hour를 선언하고 11을 초기값으로 설정
     
-    String ampm = hour < 12 ? "오전" : "오후";
+    String ampm = hour < 12 ? "오전" : "오후";  // 삼항 연산자를 사용하여 조건식을 평가
+    // 만약 hour가 12보다 작으면 오전을, 그렇지 않으면 오후를 선택하여 ampm 변수에 저장
     System.out.println(ampm);
     
-    int score = 50;
-    String result = score >= 60? "합격" : score >= 50? "재시험" : "불합격";
+    int score = 50;  // 정수형 변수 score를 선언하고 50을 초기값으로 설정
+    String result = score >= 60? "합격" : score >= 50? "재시험" : "불합격";  // 중첩된 삼항 연산자 사용
+    // score >= 60 가 만약 참이면 합격 반환, 그렇지 않으면 다시 score >= 50을 평가
+    // 만약 참이면 재시험, 거짓이면 불갑격 반환
     System.out.println(result);
     
     
