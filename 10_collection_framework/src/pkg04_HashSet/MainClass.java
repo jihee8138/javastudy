@@ -8,13 +8,16 @@ public class MainClass {
   
   public static void method1() {
     
-    //HashSet 타입 선언
+    // HashSet 타입 선언
+    // String 타입의 요소를 저장하는 Set 타입의 변수 hobbies를 선언
     Set<String> hobbies;
     
     // HashSet 객체 생성
+    // HashSet 클래스를 사용하여 hobbies라는 객체를 생성
     hobbies = new HashSet<String>();
     
     // 요소 추가하기 (순서 없이 저장되고, 중복 저장이 불가능하다.)
+    // 중복된 "수영"은 한 번만 저장된다.
     hobbies.add("수영");
     hobbies.add("수영");
     hobbies.add("수영");
@@ -24,14 +27,11 @@ public class MainClass {
     hobbies.add("게임");
     
     // advanced for 문 (알아서 하나씩 꺼내는 for 문)
+    // 향상된 for문을 사용하여 hobbies의 모든 요소를 반복적으로 가져옴
     for(String hobby : hobbies) {
       System.out.println(hobby);
     }
-    
-    
-    
-    
-    
+
   }
 
   public static void method2() {  // 교집합

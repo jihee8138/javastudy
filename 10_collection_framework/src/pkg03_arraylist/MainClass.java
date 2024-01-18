@@ -21,10 +21,10 @@ public class MainClass {
     // 이제 코드 작성할 때 import 해야할 경우가 많아짐
     // 제네릭에서는 참조타입 못 씀 int 불가능
     
-    // ArrayList 선언 (사용 가능 타입 : Collection<E>, List<E>, ArrayList<E>
+    // ArrayList 생성을 위한 변수 선언 (사용 가능 타입 : Collection<E>, List<E>, ArrayList<E>
     List<Integer> numbers; // int[] numbers; 가 환생한 거라고 생각해..
     
-    // ArrayList 생성
+    // ArrayList 객체 생성
     numbers = new ArrayList<Integer>(); // numbers = new int[10];
     
     // 요소 추가하기
@@ -34,6 +34,7 @@ public class MainClass {
     numbers.add(2);
     numbers.add(1);
     // 꽉 차면 알아서 조정해서 배열의 길이 늘려줌
+    // ArrayList는 크기를 동적으로 조절하므로 배열과는 달리 크기를 미리 지정할 필요 없음
     
     // 요소 가져오기
     System.out.println(numbers.get(0));  // 5 가져옴
@@ -48,6 +49,7 @@ public class MainClass {
   public static void method2() {
     
     // ArrayList 선언 및 생성
+    // ArrayList 를 사용하여 String 타입의 요소를 다루는 hobbies라는 리스트를 선언하고 생성
     List<String> hobbies = new ArrayList<String>();
     
     // 요소 추가하기
@@ -79,9 +81,11 @@ public class MainClass {
   public static void method3() {
     
     // 배열을 List로 바꾸기
+    // Integer 타입의 배열 arr을 선언하고 초기화
     Integer[] arr = new Integer[] {10, 20, 30};
     
     // 배열을 List로 바꿔서 반환하는 java.util.Arrays 클래스의 asList 메소드
+    // 배열을 List로 변환하기 위해 Arrays 클래스의 asList 메소드를 사용하여 numbers 리스트 생성
     List<Integer> numbers = Arrays.asList(arr);
     
     // 주의 !
@@ -94,6 +98,7 @@ public class MainClass {
   
   public static void method4() {
     
+    // String 타입의 리스트 seasons를 생성
     List<String> seasons = new ArrayList<String>();
     
     seasons.add("봄");
@@ -103,11 +108,11 @@ public class MainClass {
     seasons.add("겨울");
     
     // 요소 수정
-    seasons.set(2, "가을"); //인덱스값, 바꿀 값으로
+    seasons.set(2, "가을"); //인덱스값 2의 요소를 "가을"로 변경
     
     // 요소 삭제
     String removeItem = seasons.remove(3); // remove(삭제할 인덱스값)
-    System.out.println(removeItem);  // 삭제한 요소 보여줌
+    System.out.println(removeItem);  // 삭제한 요소 출력
     
     System.out.println(seasons);
 

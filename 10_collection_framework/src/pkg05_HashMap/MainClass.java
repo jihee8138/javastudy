@@ -23,7 +23,7 @@ public class MainClass {
     // HashMap 선언 (key 와 value 타입 다 선언해야 함)
     Map<String, Object> book;  // 일반적으로 String, Object 많이 씀
     
-    // HashMap 생성
+    // HashMap 생성하여 book에 할당
     book = new HashMap<String, Object>();
     
     // Key, Value 추가 (Entry 추가)

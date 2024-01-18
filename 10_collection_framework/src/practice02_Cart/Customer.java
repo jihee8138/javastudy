@@ -37,24 +37,24 @@ public class Customer {
   }
   
   // 물건 넣기
-  public void addToCart(Product product) {
+  public void addToCart(Product product) throws RuntimeException {
     cart.addProduct(product);
   }
   
   // 물건 바꾸기
-  public void changeCart(int idx, Product product) {
+  public void changeCart(int idx, Product product) throws RuntimeException {
     cart.changeProduct(idx, product);
   }
   
   // 물건 빼기
-  public void removeCart(int idx) {
+  public void removeCart(int idx) throws RuntimeException {
     cart.removeProduct(idx);
   }
   
   // 구매
   
   // 반환 : 영수증
-  public String buy() {
+  public String buy() throws RuntimeException {
     
     String receipt = "영수증\n"; // 영수증 출력하고 줄 바꿈
     
@@ -70,8 +70,8 @@ public class Customer {
       
       // 구매 가능 여부 체크
       if(money < total) {  // 내가 가진 돈이 물건 값보다 작을 때
-        System.out.println("구매금액이 부족합니다.");
-        return null;  // 구매 못 했으므로 영수증 안 나옴
+        throw new RuntimeException("구매금액이 부족합니다.");
+         // 구매 못 했으므로 영수증 안 나옴
       }
       
       // 영수증 만들기
