@@ -44,7 +44,7 @@ public class MainClass {
   public static void method2() {
     
     // Immutable 객체 (값을 바꿀 수 없는 객체)
-    // 추가도 안 되고 삭제도 안 됨,
+    // 추가도 안 되고 삭제도 안 됨.
     Map<String, Object> map  = Map.of("name", "홍길동");
     
     // 값을 바꾸려는 시도
