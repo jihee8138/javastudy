@@ -5,6 +5,23 @@ public class MainClass {
 public static void method1() {
   
   // 월에 따른 계절 출력하기
+//  int month = 12;
+//  String season;
+//  
+//  int mod = month % 12;
+//  
+//  if(mod <= 2) {
+//    season = "겨울";
+//  } else if(mod <= 5) {
+//    season = "봄";
+//  } else if(mod <= 8) {
+//    season = "여름";
+//  } else {
+//    season = "가을";
+//  }
+//  
+//  System.out.println(season);
+  
   int month = 12;
   String season;
   
@@ -12,15 +29,7 @@ public static void method1() {
   
   if(mod <= 2) {
     season = "겨울";
-  } else if(mod <= 5) {
-    season = "봄";
-  } else if(mod <= 8) {
-    season = "여름";
-  } else {
-    season = "가을";
   }
-  
-  System.out.println(season);
   
 }
 

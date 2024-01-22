@@ -21,7 +21,6 @@ public class MainClass {
     builder.append(System.currentTimeMillis());
     builder.append(extName);
     System.out.println(builder.toString());
-    
   }
   
   public static Map<String, Object> method2(String id) {
@@ -113,8 +112,9 @@ public class MainClass {
       // 출금액 : 1 <= 난수 <= balance
       int money = (int)(Math.random() * balance + 1); 
       count++;
-      System.out.println("출금 전 " + balance + "원, " + count + "회 출금액" + money + "원, 출금 후 " + (balance -= money) + "원");
-      
+      System.out.println("출금 전 " + balance + "원, " 
+                        + count + "회 출금액" + money + "원, 출금 후 " 
+                        + (balance -= money) + "원");
     }
     
   }
