@@ -29,7 +29,11 @@ public static void method1() {
   
   if(mod <= 2) {
     season = "겨울";
-  }
+  } else if(mod <= 5) {
+    season = "여름";
+  } else if(mod <= 8) {
+    
+  } 
   
 }
 

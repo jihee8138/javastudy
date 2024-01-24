@@ -5,7 +5,6 @@ import java.io.DataOutputStream;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.ObjectOutputStream;
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -196,7 +195,7 @@ public class MainClass {
       dir.mkdirs();
     }
     
-    File file = new File(dir, "sample4.txt");
+    File file = new File(dir, "sample4.dat");
     
     DataOutputStream out = null;
     
@@ -240,7 +239,7 @@ public class MainClass {
       dir.mkdirs();
     }
     
-    File file = new File(dir, "sample5.txt");
+    File file = new File(dir, "sample5.dat");
     
     ObjectOutputStream out = null;
     
