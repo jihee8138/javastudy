@@ -7,7 +7,7 @@ import java.net.URL;
 
 public class Class04_InputSream {
 
-  public static void main(String[] args) {
+  public static void method1() {
     String spec = "https://www.google.com/";
     URL url = null;
     HttpURLConnection con = null;
@@ -44,6 +44,13 @@ public class Class04_InputSream {
         con.disconnect();
     }
 
+  }  public static void method2() {
+    
+  }
+    
+   
+    public static void main(String[] args) {
+    
   }
 
 }
