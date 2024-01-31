@@ -164,7 +164,7 @@ public class UserDao {
       connection(); // 쿼리문 여러 줄로 작성 시 공백에 주의하자. 각 첫 줄에 공백을 두지 않으면 오류 난다.
       String sql = "UPDATE USER_T"
                  + "   SET USER_NAME = ?, USER_TEL = ?"
-                 + " WHERE USER_N0 = ?";
+                 + " WHERE USER_NO = ?";
       
       ps = con.prepareStatement(sql);
       
@@ -192,7 +192,7 @@ public class UserDao {
     try {
       
       connection();
-      String sql = "DELETE USER_T SET USER_NO WHERE USER_NO = ?";
+      String sql = "DELETE FROM USER_T WHERE USER_NO = ?";
       
       ps = con.prepareStatement(sql);
       ps.setInt(1, user_no);
